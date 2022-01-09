@@ -1,0 +1,42 @@
+li.break {
+    display: none;
+}
+.text-dot{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+
+}
+.box p{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+}
+.courser-p{
+    cursor:pointer;
+}
+.card_click_ani{
+    transition: 0.3s;
+}
+.card_click_ani:hover{
+    background-color:rgb(227, 236, 241) !important;
+    position: relative;
+    animation: cardMove .5s 1;
+}
+.page-item.active .page-link {
+    background-color: #79d9a8 !important;
+    border-color: #79d9a8 !important;
+}
+.page-link:focus {
+    box-shadow: 0 0 0 0.25rem rgb(198 235 216) !important;
+}
+.page-link {
+    color: #000000;
+}
+@keyframes cardMove {
+    0%   {top: 0px;}
+    25%  {top: 10px;}
+     75%  {top: 0px}
+  }

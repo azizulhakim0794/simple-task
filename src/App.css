@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loading {
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.profile {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+}
+.bg-lite-green {
+  background-color: #ebf2f5;
+}
+.btn-green {
+  background-color: #79d9a8;
+  border-color: #79d9a8;
+  font-weight: 600;
+}
+.btn-green:active, .show>.btn-green.dropdown-toggle {
+  color: #000;
+  background-color: #79d9a8;
+  border-color: #79d9a8;
+}
+.btn.btn-green:hover {
+  background-color: #63c592;
+}
+.btn-green:focus  {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 253 142 / 35%);
+}
+.h-100vh{
+  height: 100vh;
+}
+.modal-dialog {
+  /* max-width: 500px; */
+  margin: 0 auto !important;
+}
+.fixed{
+  position: fixed;
+}
+.col-md-3.shadow.p-3.rounded.bg-lite-green {
+  overflow: auto;
+}
+.mr-n{
+  margin-top:-81px
 }
 
-.App-link {
-  color: #61dafb;
+.btn-red{
+  background-color: #d97c79;
+  border-color: #d97c79;
+  font-weight: 600;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-red:active, .show>.btn-red.dropdown-toggle {
+  color: #000;
+  background-color: #d97979;
+  border-color: #d97979;
+}
+.btn.btn-red:hover {
+  background-color: #dd6969;
+}
+.btn-red:focus  {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.35);
+}
+input.PhoneInputInput {
+  border: 0;
+}
+input.PhoneInputInput:focus-visible {
+  border: 0;
 }
